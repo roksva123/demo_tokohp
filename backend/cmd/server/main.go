@@ -4,10 +4,11 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/rs/cors"
 	"nova-gear/internal/handler"
 	"nova-gear/internal/repository"
 	"nova-gear/internal/service"
+
+	"github.com/rs/cors"
 )
 
 func main() {

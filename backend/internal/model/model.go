@@ -20,6 +20,7 @@ type Product struct {
 	Specs       []Spec  `json:"specs"`
 	Stock       int     `json:"stock"`
 	Featured    bool    `json:"featured"`
+	Type        string  `json:"type"`
 }
 
 type Color struct {
