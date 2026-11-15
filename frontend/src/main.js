@@ -7,7 +7,7 @@ import { createPhone, disposePhone } from "./three/createPhone.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const API = "http://localhost:8080";
+const API = (import.meta.env.VITE_API_URL || "http://localhost:8080").replace(/\/$/, "");
 const CART_ID = "nova-demo-guest";
 const PLACEHOLDER = "/products/placeholder.svg";
 const categoryImage = {
